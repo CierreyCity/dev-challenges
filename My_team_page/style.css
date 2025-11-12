@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-   
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Header */
+
 .header {
-  margin-top : 1em;
-  display:flex;
+  margin-top: 4rem;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -26,15 +32,68 @@
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.045em;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
 }
 
 .title {
   text-transform: uppercase;
   margin-bottom: 0.5em;
+  font-family: "Poppins", sans-serif;
 }
 .p-title {
   font-size: 16px;
-  line-height:1.4;
+  font-family: "Poppins", sans-serif;
+}
 
+/* Cards */
+
+.main {
+  margin: 4rem 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.card-img {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-img img {
+  width: 80%; /* laisse de la place pour le rôle */
+  height: auto; /* respecte l'aspect ratio */
+  object-fit: contain;
+}
+
+.role {
+  writing-mode: vertical-rl;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  font-family: "PT Serif", serif;
+  margin-left: 2px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  text-transform: capitalize;
+  margin-top: 0.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.card:nth-child(3n + 2) {
+  margin-top: 4rem;
 }
