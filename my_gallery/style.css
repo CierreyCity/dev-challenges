@@ -67,3 +67,43 @@
   color: #bdbdbd;
   font-size: 14px;
 }
+
+.gallery {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "one two two"
+    "three three four"
+    "five six four";
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.gallery > .img:nth-child(1) {
+  grid-area: one;
+}
+.gallery > .img:nth-child(2) {
+  grid-area: two;
+}
+.gallery > .img:nth-child(3) {
+  grid-area: three;
+}
+.gallery > .img:nth-child(4) {
+  grid-area: four;
+}
+.gallery > .img:nth-child(5) {
+  grid-area: five;
+}
+.gallery > .img:nth-child(6) {
+  grid-area: six;
+}
+
+.gallery > .img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 1px 2px 14px rgba(0, 0, 0, 0.2);
+}
