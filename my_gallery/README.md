@@ -1,4 +1,4 @@
-<h1 align="center">interior_consultant</h1>
+<h1 align="center">my_gallery</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://cierreycity.github.io/dev-challenges/interior_consultant/">
+    <a href="https://cierreycity.github.io/dev-challenges/my_gallery/">
       Demo
     </a>
   </h3>
